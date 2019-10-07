@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HopperJS</title>
+    <link rel="stylesheet" type="text/css" href="../../dist/bundle.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div data-hopper="with:(click)|flow:(tab->field)">
+        <div class="tab">
+          <ul>
+            <li><a href="#primary" data-tab>Primary</a></li>
+            <li><a href="#secondary" data-tab>Secondary</a></li>
+            <li><a href="#tertiary" data-tab>Tertiary</a></li>
+          </ul>
+        </div>
+
+        <div class="content">
+          <div data-field="primary" class="active">
+            <p>Primary Content</p>
+          </div>
+
+          <div data-field="secondary">
+            <p>Secondary Content</p>
+          </div>
+
+          <div data-field="tertiary">
+            <p>Tertiary Content</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../dist/bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+{
+  "name": "hopperjs",
+  "version": "1.0.0",
+  "description": "Makes tabifying easier",
+  "main": "Hopper/scripts/Hopper.js",
+  "scripts": {
+    "dev": "webpack --mode=development",
+    "watch": "webpack --watch --mode=development",
+    "production": "NODE_ENV=production webpack --mode=production",
+    "fix-js": "eslint-auto-fix",
+    "build": "babel src --presets babel-preset-env --out-dir Hopper",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cfkarakulak/HopperJS.git"
+  },
+  "keywords": [
+    "tabs",
+    "accordion"
+  ],
+  "author": "Cemre Fatih Karakulak",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/cfkarakulak/HopperJS/issues"
+  },
+  "contributors": [
+    {
+      "name": "Cemre Fatih Karakulak",
+      "email": "cradexco@gmail.com",
+      "url": "https://github.com/cfkarakulak"
+    }
+  ],
+  "homepage": "https://github.com/cfkarakulak/HopperJS#readme",
+  "peerDependencies": {
+    "jquery": ">=1.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.3.0",
+    "eslint-auto-fix": "^1.0.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-import": "^2.18.2",
+    "less": "^3.8.0",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.1.0",
+    "braces": ">=2.3.1"
+  },
+  "dependencies": {
+    "jquery": ">=1.8.0"
+  }
+}

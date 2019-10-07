@@ -1,0 +1,21 @@
+{
+  "name": "hopperjs",
+  "description": "Makes tabifying easier",
+  "main": "Hopper/scripts/Hopper.js",
+  "authors": [
+    "Cemre Fatih Karakulak"
+  ],
+  "license": "WTFPL",
+  "keywords": [
+    "tabs",
+    "accordion",
+  ],
+  "homepage": "https://github.com/cfkarakulak/HopperJS",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
