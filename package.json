@@ -1,6 +1,6 @@
 {
-  "name": "hopperjs",
-  "version": "1.0.0",
+  "name": "hopperjsx",
+  "version": "1.0.1-rc.1",
   "description": "Makes tabifying easier",
   "main": "Hopper/scripts/Hopper.js",
   "scripts": {
