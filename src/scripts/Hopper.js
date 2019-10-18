@@ -46,6 +46,8 @@ export default class Hopper {
       $tabs.removeClass('active').filter($self).addClass('active');
       $fields.removeClass('active').filter(target).addClass('active');
     }
+
+    return false;
   }
 
   static explode(config) {
