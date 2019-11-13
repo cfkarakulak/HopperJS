@@ -37,6 +37,10 @@ export default class Hopper {
     const $tabs = $self.closest(args.selector).find(`[data-${args.config.flow[0]}]`);
     const $fields = $self.closest(args.selector).find(`[data-${args.config.flow[1]}]`);
 
+    if (typeof $self.data('redirect') !== 'undefined') {
+      document.location.href = $self.attr('href');
+    }
+
     if (args.config.recurrence === true) {
       $tabs.filter($self).toggleClass('active');
       $fields.filter(target).toggleClass('active');
@@ -47,6 +51,10 @@ export default class Hopper {
       $fields.removeClass('active').filter(target).addClass('active');
     }
 
+    if (args.config.lock === true) {
+      $('body').toggleClass('no-scroll');
+    }
+
     return false;
   }
 
@@ -54,7 +62,10 @@ export default class Hopper {
     const event = config.includes('with:') ? config.match(/with:\((.*?)\)/)[1] : 'click';
     const flow = config.includes('flow:') ? config.match(/flow:\((.*?)\)/)[1].split('->') : false;
     const recurrence = config.includes('recurrence:') ? Boolean(config.match(/recurrence:\((.*?)\)/)[1]) : false;
+    const lock = config.includes('lock:') ? Boolean(config.match(/lock:\((.*?)\)/)[1]) : false;
 
-    return { event, flow, recurrence };
+    return {
+      event, flow, recurrence, lock,
+    };
   }
 }
